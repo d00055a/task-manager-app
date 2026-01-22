@@ -70,15 +70,17 @@ npm start
 
 ## Deployment
 
-The frontend is deployed on GitHub Pages.
+To deploy to GitHub Pages:
 
-Before deployment, the environment variable must be updated to point to the production backend API:
+
+1. Update .env with the production backend URL:
 
 ```Env
 VITE_API_URL=https://user-authentication-backend-3dvc.onrender.com
 ```
 
-The application is then built and deployed using:
+2. Build and deploy:
+
 
 ```bash
 npm run deploy
