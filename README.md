@@ -55,8 +55,12 @@ https://task-api-4e4u.onrender.com
 git clone https://github.com/d00055a/task-manager-app.git
 cd task-manager-app
 npm install
-``` 
+```
+### Install depencies
 
+```bash
+npm install
+```
 - Create a **.env** file:
 
 ```Env
