@@ -1,139 +1,82 @@
-# Task Manager App
+# Task Manager App (Frontend)
 
-A full-stack **Task Management Application** built with **React** on the frontend and **Node.js + Express** on the backend, using **MongoDB** for data persistence.
+## Overview
 
-The application demonstrates full **CRUD functionality**, RESTful API communication and a clean, responsive user interface for managing daily tasks.
+This project is a full-stack Task Management Application developed independently by me as part of a remote Web Development Internship at Codveda Technologies.
 
+The frontend is built with React and provides a clean, responsive user interface for managing daily tasks. The application communicates with a REST API backend to perform full CRUD operations and persist data in a database.
+
+## Project Scope
+
+This project was fully designed and implemented by me, without working in a team. I was responsible for the frontend user interface, API integration, application logic, and deployment.
 
 ## Features
 
 - Create new tasks
-
 - Update existing tasks
-
-- Mark tasks as completed (toggle)
-
+- Mark tasks as completed
 - Delete tasks
+- Client-side input validation with modal feedback
+- Responsive UI with custom CSS styling
+- Persistent task data via backend API
 
-- Input validation with modal feedback for empty submissions
+## Frontend Implementation
 
-- Persistent data storage using MongoDB
+- React components for task creation, listing and updates
+- State management for tasks and UI interactions
+- REST API integration using Axios
+- Responsive layout and custom styling using CSS
+- Clean and user-friendly interface focused on usability
 
-- Responsive UI with custom CSS styling  
+## Tech Stack
 
-## Architecture
+### Frontend
+- React
+- Axios
+- CSS3 (custom styling & responsiveness)
 
-- **Frontend**: React (GitHub Pages)
+## Live Demo
 
-- **Backend**: Node.js + Express (Render)
+Frontend:  
+https://d00055a.github.io/task-manager-app/
 
-- **Database**: MongoDB Atlas
+Backend API:  
+https://task-api-4e4u.onrender.com
 
-- **Communication**: REST API using Axios
+> Note: The backend is hosted on Render (free tier), so the first request may take up to one minute to respond.
 
-## Tech stack
 
-**Frontend**
-
-- **React** – UI library
-
-- **Axios** – API communication
-
-- **CSS3** – Custom styling & responsive design
-
-**Backend**
-
-- **Node.js** – Server runtime
-
-- **Express.js** – REST API framework
-
-- **MongoDB & Mongoose** – Database & ODM
-
-- **CORS** – Cross-origin resource sharing
-
-- **dotenv** – Environment variable management
-
-- **morgan** – HTTP request logging
-
-## Deployment
-
-**Platforms**
-- GitHub Pages(frontend)
-- Render(backend)
-- MongoDB Atlas(database) <br><br>
-
-## Live demo
-
-**Frontend**: https://d00055a.github.io/task-manager-app/ <br>
-
-**Backend API**: https://task-api-4e4u.onrender.com (Hosted on Render) <br><br>
-
-- Note: The backend is hosted on Render (free tier), so the first request may take up to **1 minute** to wake up.
   
 ## Run Locally
 
-- **Clone the repositories**
+### Frontend Setup
 
 ```bash
 git clone https://github.com/d00055a/task-manager-app.git
-git clone https://github.com/d00055a/task-manager-backend.git
-``` 
-
-- **Install dependencies**
-
-**Frontend**
-```bash
 cd task-manager-app
 npm install
-```
+``` 
 
-**Backend**
-```bash
-cd ../task-manager-backend
-npm install
-```
-
-
-- **Configure environment variables**
-
-**Frontend** (task-manager-app/.env):
+- Create a .env file:
 
 ```Env
 REACT_APP_API_URL=http://localhost:5000
 ```
+- Run the application:
 
-**Backend** (task-manager-backend/.env):
-
-```Env
-MONGO_URI=mongodb_connection_string
-PORT=5000
-```
-
-- **Run the application**
-
-**Backend**
 ```bash
-cd task-manager-backend
-node server.js
-```
-
-**Frontend**
-```bash
-cd ../task-manager-app
 npm start
 ```
 
 ## Purpose
 
-This project was built to practice and demonstrate:
+This project was built to demonstrate:
 
-- Full-stack CRUD operations
+- Independent frontend development with React
 
-- RESTful API development
+- CRUD operations through API integration
 
-- Frontend–backend integration
+- Building responsive and user-friendly interfaces
 
-- MongoDB data persistence
-
-- Real-world project structure and deployment
+- Real-world frontend ↔ backend communication
 
