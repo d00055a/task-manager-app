@@ -57,7 +57,7 @@ cd task-manager-app
 npm install
 ``` 
 
-- Create a .env file:
+- Create a **.env** file:
 
 ```Env
 REACT_APP_API_URL=http://localhost:5000
@@ -67,6 +67,23 @@ REACT_APP_API_URL=http://localhost:5000
 ```bash
 npm start
 ```
+
+## Deployment
+
+The frontend is deployed on GitHub Pages.
+
+Before deployment, the environment variable must be updated to point to the production backend API:
+
+```Env
+VITE_API_URL=https://user-authentication-backend-3dvc.onrender.com
+```
+
+The application is then built and deployed using:
+
+```bash
+npm run deploy
+```
+
 
 ## Purpose
 
